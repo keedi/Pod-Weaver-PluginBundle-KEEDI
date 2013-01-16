@@ -101,14 +101,11 @@ This plugin bundle is equivalent to the following C<weaver.ini> file:
 
 =head1 SEE ALSO
 
-=over
+=for :list
+* L<Dist::Zilla>
+* L<Pod::Weaver>
+* L<Pod::Weaver::PluginBundle::Default>
+* L<Pod::Elemental::Transformer::List>
 
-=item L<Dist::Zilla>
-
-=item L<Pod::Weaver>
-
-=item L<Pod::Weaver::PluginBundle::Default>
-
-=back
 
 =cut
