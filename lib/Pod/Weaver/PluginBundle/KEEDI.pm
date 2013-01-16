@@ -35,7 +35,8 @@ sub mvp_bundle_config {
         [ '@KEEDI/ACK',          _exp('Generic'),      { header => 'ACKNOWLEDGEMENTS' } ],
         [ '@KEEDI/Legal',        _exp('Legal'),        {} ],
 
-        [ '-Encoding',           _exp('-Encoding'),    { encoding => 'utf-8' } ],
+        [ '@KEEDI/List',         _exp('-Transformer'), { transformer => 'List'  } ],
+        [ '-Encoding',           _exp('-Encoding'),    { encoding    => 'utf-8' } ],
     )
 }
 
