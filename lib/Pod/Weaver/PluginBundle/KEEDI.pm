@@ -35,7 +35,8 @@ sub mvp_bundle_config {
         [ '@KEEDI/ACK',          _exp('Generic'),      { header => 'ACKNOWLEDGEMENTS' } ],
         [ '@KEEDI/Legal',        _exp('Legal'),        {} ],
 
-        [ '-Encoding',           _exp('-Encoding'),    { encoding => 'utf-8' } ],
+        [ '@KEEDI/List',         _exp('-Transformer'), { transformer => 'List'  } ],
+        [ '-Encoding',           _exp('-Encoding'),    { encoding    => 'utf-8' } ],
     )
 }
 
@@ -63,7 +64,7 @@ This is the L<Pod::Weaver> config I use for building my documentation.
 
 =head1 OVERVIEW
 
-This plugin bundle is equivalent to the following weaver.ini file:
+This plugin bundle is equivalent to the following C<weaver.ini> file:
 
   [@CorePrep]
 
@@ -91,20 +92,20 @@ This plugin bundle is equivalent to the following weaver.ini file:
   [Generic / ACKNOWLEDGEMENTS]
   [Legal]
 
+  [-Transformer]
+  transformer = List
+
   [-Encoding]
   encoding = utf-8
 
 
 =head1 SEE ALSO
 
-=over
+=for :list
+* L<Dist::Zilla>
+* L<Pod::Weaver>
+* L<Pod::Weaver::PluginBundle::Default>
+* L<Pod::Elemental::Transformer::List>
 
-=item L<Dist::Zilla>
-
-=item L<Pod::Weaver>
-
-=item L<Pod::Weaver::PluginBundle::Default>
-
-=back
 
 =cut
