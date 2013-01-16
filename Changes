@@ -1,5 +1,7 @@
 Release history for Pod-Weaver-PluginBundle-KEEDI
 
+0.002   2013-01-16 18:32:45 Asia/Seoul
+    - Support list syntax using Pod::Elemental::Transformer::List
+
 0.001   2012-06-19 05:02:03 Asia/Seoul
     First version, released on unsuspecting world.
-
