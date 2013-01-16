@@ -64,7 +64,7 @@ This is the L<Pod::Weaver> config I use for building my documentation.
 
 =head1 OVERVIEW
 
-This plugin bundle is equivalent to the following weaver.ini file:
+This plugin bundle is equivalent to the following C<weaver.ini> file:
 
   [@CorePrep]
 
@@ -91,6 +91,9 @@ This plugin bundle is equivalent to the following weaver.ini file:
   [Contributors]
   [Generic / ACKNOWLEDGEMENTS]
   [Legal]
+
+  [-Transformer]
+  transformer = List
 
   [-Encoding]
   encoding = utf-8
