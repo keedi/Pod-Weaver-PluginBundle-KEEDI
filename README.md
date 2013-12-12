@@ -1,10 +1,10 @@
 # NAME
 
-Pod::Weaver::PluginBundle::KEEDI - document your modules like KEEDI does 
+Pod::Weaver::PluginBundle::KEEDI - document your modules like KEEDI does
 
 # VERSION
 
-version 0.003
+version 0.004
 
 # SYNOPSIS
 
@@ -19,7 +19,7 @@ or in dist.ini:
 
 # DESCRIPTION
 
-This is the [Pod::Weaver](http://search.cpan.org/perldoc?Pod::Weaver) config I use for building my documentation.
+This is the [Pod::Weaver](https://metacpan.org/pod/Pod::Weaver) config I use for building my documentation.
 
 # OVERVIEW
 
@@ -59,10 +59,10 @@ This plugin bundle is equivalent to the following `weaver.ini` file:
 
 # SEE ALSO
 
-- [Dist::Zilla](http://search.cpan.org/perldoc?Dist::Zilla)
-- [Pod::Weaver](http://search.cpan.org/perldoc?Pod::Weaver)
-- [Pod::Weaver::PluginBundle::Default](http://search.cpan.org/perldoc?Pod::Weaver::PluginBundle::Default)
-- [Pod::Elemental::Transformer::List](http://search.cpan.org/perldoc?Pod::Elemental::Transformer::List)
+- [Dist::Zilla](https://metacpan.org/pod/Dist::Zilla)
+- [Pod::Weaver](https://metacpan.org/pod/Pod::Weaver)
+- [Pod::Weaver::PluginBundle::Default](https://metacpan.org/pod/Pod::Weaver::PluginBundle::Default)
+- [Pod::Elemental::Transformer::List](https://metacpan.org/pod/Pod::Elemental::Transformer::List)
 
 # AUTHOR
 
