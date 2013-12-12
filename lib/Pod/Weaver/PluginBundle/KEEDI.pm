@@ -1,5 +1,5 @@
 package Pod::Weaver::PluginBundle::KEEDI;
-# ABSTRACT: document your modules like KEEDI does 
+# ABSTRACT: document your modules like KEEDI does
 
 use strict;
 use warnings;
@@ -13,31 +13,31 @@ sub mvp_multivalue_args { qw( contributors ) }
 
 sub mvp_bundle_config {
     return (
-        [ '@KEEDI/CorePrep',     _exp('@CorePrep'),    {} ],
-        [ '@KEEDI/Name',         _exp('Name'),         {} ],
-        [ '@KEEDI/Version',      _exp('Version'),      {} ],
+        [ '@KEEDI/SingleEncoding', _exp('-SingleEncoding'), {} ],
+        [ '@KEEDI/CorePrep',       _exp('@CorePrep'),       {} ],
+        [ '@KEEDI/Name',           _exp('Name'),            {} ],
+        [ '@KEEDI/Version',        _exp('Version'),         {} ],
 
-        [ '@KEEDI/prelude',      _exp('Region'),       { region_name => 'prelude'  } ],
-        [ 'SYNOPSIS',            _exp('Generic'),      {} ],
-        [ 'DESCRIPTION',         _exp('Generic'),      {} ],
-        [ 'OVERVIEW',            _exp('Generic'),      {} ],
+        [ '@KEEDI/prelude',        _exp('Region'),          { region_name => 'prelude'  } ],
+        [ 'SYNOPSIS',              _exp('Generic'),         {} ],
+        [ 'DESCRIPTION',           _exp('Generic'),         {} ],
+        [ 'OVERVIEW',              _exp('Generic'),         {} ],
 
-        [ 'ATTRIBUTES',          _exp('Collect'),      { command => 'attr'   } ],
-        [ 'METHODS',             _exp('Collect'),      { command => 'method' } ],
-        [ 'FUNCTIONS',           _exp('Collect'),      { command => 'func'   } ],
+        [ 'ATTRIBUTES',            _exp('Collect'),         { command => 'attr'   } ],
+        [ 'METHODS',               _exp('Collect'),         { command => 'method' } ],
+        [ 'FUNCTIONS',             _exp('Collect'),         { command => 'func'   } ],
 
-        [ '@KEEDI/Leftovers',    _exp('Leftovers'),    {} ],
+        [ '@KEEDI/Leftovers',      _exp('Leftovers'),       {} ],
 
-        [ '@KEEDI/postlude',     _exp('Region'),       { region_name => 'postlude' } ],
+        [ '@KEEDI/postlude',       _exp('Region'),          { region_name => 'postlude' } ],
 
-        [ '@KEEDI/Authors',      _exp('Authors'),      {} ],
-        [ '@KEEDI/Contributors', _exp('Contributors'), {} ],
-        [ '@KEEDI/ACK',          _exp('Generic'),      { header => 'ACKNOWLEDGEMENTS' } ],
-        [ '@KEEDI/Legal',        _exp('Legal'),        {} ],
+        [ '@KEEDI/Authors',        _exp('Authors'),         {} ],
+        [ '@KEEDI/Contributors',   _exp('Contributors'),    {} ],
+        [ '@KEEDI/ACK',            _exp('Generic'),         { header => 'ACKNOWLEDGEMENTS' } ],
+        [ '@KEEDI/Legal',          _exp('Legal'),           {} ],
 
-        [ '@KEEDI/List',         _exp('-Transformer'), { transformer => 'List'  } ],
-        [ '-Encoding',           _exp('-Encoding'),    { encoding    => 'utf-8' } ],
-    )
+        [ '@KEEDI/List',           _exp('-Transformer'),    { transformer => 'List'  } ],
+    );
 }
 
 1;
