@@ -1,5 +1,7 @@
 Release history for Pod-Weaver-PluginBundle-KEEDI
 
+    - Use Pod::Weaver's SingleEncoding module
+
 0.003   2013-01-16 18:35:12 Asia/Seoul
     - Add README.mkd at project root directory
 
