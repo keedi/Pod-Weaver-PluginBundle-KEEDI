@@ -1,5 +1,5 @@
 package Pod::Weaver::PluginBundle::KEEDI;
-# ABSTRACT: document your modules like KEEDI does 
+# ABSTRACT: document your modules like KEEDI does
 
 use strict;
 use warnings;
